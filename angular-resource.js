@@ -1,9 +1,5 @@
-/**
- * @license AngularJS v1.8.3
- * (c) 2010-2020 Google LLC. http://angularjs.org
- * License: MIT
- */
-(function(window, angular) {'use strict';
+((window, angular) => {
+'use strict';
 
 var $resourceMinErr = angular.$$minErr('$resource');
 
@@ -497,7 +493,7 @@ function shallowClearAndCopy(src, dst) {
  *
  */
 angular.module('ngResource', ['ng']).
-  info({ angularVersion: '1.8.3' }).
+  info({ angularVersion: '1.8.4' }).
   provider('$resource', function ResourceProvider() {
     var PROTOCOL_AND_IPV6_REGEX = /^https?:\/\/\[[^\]]*][^/]*/;
 
@@ -906,6 +902,5 @@ angular.module('ngResource', ['ng']).
       return resourceFactory;
     }];
   });
-
 
 })(window, window.angular);

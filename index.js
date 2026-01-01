@@ -1,2 +1,3 @@
-require('./angular-resource');
-module.exports = 'ngResource';
+import './angular-resource.js';
+
+export default window.ngResource;
